@@ -1,0 +1,108 @@
+/*-----------------------Animation keyframes----------------------*/
+
+/*Fade in down animation for logo */
+
+@keyframes fade-in-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+}
+
+/* Bounce in from right animation */ 
+
+@keyframes bounce-in-right {
+    0% {
+      opacity: 0;
+      transform: translateX(2000px);
+    }
+    60% {
+      opacity: 1;
+      transform: translateX(-30px);
+    }
+    80% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+/* fade in upwards direction */ 
+
+@keyframes fade-in-upwards {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+}
+
+/* fade in animation */ 
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+
+
+/*----------------------------Animation keyframes end -------------------------*/
+
+/*------------------------------------Classes for Animations-----------------------------------------*/
+
+/* fade in down (drop down) animation */
+
+.fadeindown {
+    animation: fade-in-down 2s ease;
+}
+
+/* bounce in right*/
+
+.bounce-in-right {
+    animation: bounce-in-right 2s ease;
+}
+
+/* fade in up (drop up) animation */
+.fadeinup {
+    animation: fade-in-upwards 2s ease;
+}
+
+/* fade in animation */
+
+.fade-in {
+    animation: fade-in 2s linear;
+}
+
+.nav-link:hover{
+    transform: translateY(2px);
+    color: maroon;
+    transition: ease-out 0.3s;
+}
+
+.btn{
+    box-shadow: inset 0 0 0 0 #c1e2f7;
+    transition: ease-out 0.3s;
+    background-color: #c1e2f7;
+    border-color: #c1e2f7;
+    color: black;
+}
+
+.btn:hover {
+    box-shadow: inset 200px 0 0 0 black;
+    cursor: pointer;
+    color: #218fd4;
+    transform: translateY(5px);
+    border-color: black;   
+}
