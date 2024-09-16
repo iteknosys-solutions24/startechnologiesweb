@@ -44,6 +44,8 @@ ALLOWED_HOSTS = config("ALLOWED_HOSTS").split(",")
 # Application definition
 
 INSTALLED_APPS = [
+    
+    'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -66,6 +68,7 @@ EMAIL_HOST_PASSWORD = 'atzo dwlm kjhy ajgv'  # Replace with your email password
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
