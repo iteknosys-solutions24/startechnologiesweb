@@ -28,19 +28,7 @@
 <body>
  
  <!-- <marquee behavior="" direction="left">Highlights: Sharp's Newly Launched Printer -: Sharp BP-20M22 A3 Multifunctional Printer<img src="{% static 'img/lohith.gif' %}" alt="" width="3%" height="3%"> </marquee> -->
-
-         {% if messages %}
-         <div class="alert-container">
-             {% for message in messages %}
-                 <div class="alert alert-{{ message.tags }}  alert-custom-large alert-dismissible fade show" role="alert">
-                     {{ message }}
-                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                 </div>
-             {% endfor %}
-         </div>
-       {% endif %}
- 
-  <!-- Navbar -->
+ <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-custom py-3 sticky-top">
     <div class="container">
       <a class="navbar-brand" href="#">
