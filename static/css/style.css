@@ -345,5 +345,40 @@ section{
     cursor: pointer;
 }
 
+/*--------------------------product page hover image---------------------------------------*/
 
-
+.bp-20m .comment {
+    visibility: hidden;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    margin-left: 50px;
+  
+    /* Position the comment */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .bp-20m:hover .comment {
+    visibility: visible;
+    width: 120px;
+    height: 120px;
+    top: 100%;
+    left: 80%;
+    margin-left: -60px;
+    animation: fade-in 2s ease;
+  }
+  
+  .bp-20m .comment::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+  }
+  
