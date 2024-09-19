@@ -6,14 +6,320 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Products</title>
+    <!--   fontawesome icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap CSS & Icons --> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!--   Boxicons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<!--   Animation CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  
+<!--   own CSS styling -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/animation.css' %}">
 </head>
 <body>
-    
-  <center>
-        <h1><u>Our Products Details</u></h1>
-       <img src="{% static 'img/others/work-prog2.png' %}" alt="Partner 6"><br>
+    <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom py-3 sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img class="logo fadeindown" src="{% static 'img/main/starlogo.png' %}" alt="logo" width="30%" height="25%">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto fadeindown">
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'index-view' %}"><i class="bi bi-house-door"></i></a>
+              </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#copiers">COPIERS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#displays">DISPLAYS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projectors">PROJECTORS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#otherprods" >OUR OTHER PRODUCTS</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+   <!-- Navbar End -->
+
+   <!-- copiers -->
+  <section id="copiers">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 25rem;">
+                    <img src="{% static 'img/partners/sharp-logo.png' %}" class="card-img-top" alt="sharp">
+                    <div class="card-body">
+                      <h5 class="card-title">Sharp Copier Models</h5>
+                      <p class="card-text">Multifunctional Printers & Digital Copiers</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <a href="#" class="card-link"><li class="list-group-item">BP-20M-22T/24/28/31</li></a>
+                      <li class="list-group-item">BP-30M-28T/31/35</li>
+                      <li class="list-group-item">BP-20C-20ZT/25</li>
+                      <li class="list-group-item">BP-30C-25ZT</li>
+                      <li class="list-group-item">BP-50C-26/31/36</li>
+                    </ul>
+                    
+                  </div>
       
+            </div>
+            <div class="col">
+                <div class="card" style="width: 25rem;">
+                    <img src="{% static 'img/partners/ricoh_logo.png' %}" class="card-img-top" alt="ricoh">
+                    <div class="card-body">
+                      <h5 class="card-title">Ricoh Copier Models</h5>
+                      <p class="card-text">Multifunctional Printers & Digital Copiers</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">PC-311W</li>
+                      <li class="list-group-item" style="padding-bottom: 140px;">M-320F</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 25rem;">
+                        <img src="{% static 'img/partners/kyocera-logo.png' %}" class="card-img-top" alt="kyocera" style="padding-bottom: 10px;">
+                        <div class="card-body">
+                          <h5 class="card-title">Kyocera Copier Models</h5>
+                          <p class="card-text">Multifunctional Printers & Digital Copiers</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">M-8124</li>
+                          <li class="list-group-item" style="padding-bottom: 150px;">P-2235</li>
+                        </ul>
+                      </div>
+                </div>
+        </div>
+    </div>
+    </section>
+    <!-- copiers end -->
+
+      <!-- displays -->
+  <section id="displays">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'img/partners/sharp-logo.png' %}" class="card-img-top" alt="sharp">
+                    <div class="card-body">
+                      <h5 class="card-title">Sharp Copier Models</h5>
+                      <p class="card-text">Multifunctional Printers & Digital Copiers</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <a href="#" class="card-link"><li class="list-group-item">BP-20M-22T/24/28/31</li></a>
+                      <li class="list-group-item">BP-30M-28T/31/35</li>
+                      <li class="list-group-item">BP-20C20ZT/25</li>
+                      <li class="list-group-item">BP-30C25ZT</li>
+                      <li class="list-group-item">BP-50C26/31/36</li>
+                    </ul>
+                    
+                  </div>
+      
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'img/partners/ricoh_logo.png' %}" class="card-img-top" alt="ricoh">
+                    <div class="card-body">
+                      <h5 class="card-title">Ricoh Copier Models</h5>
+                      <p class="card-text">Multifunctional Printers & Digital Copiers</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">PC-311W</li>
+                      <li class="list-group-item" style="padding-bottom: 140px;">M-320F</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'img/partners/kyocera-logo.png' %}" class="card-img-top" alt="kyocera">
+                        <div class="card-body">
+                          <h5 class="card-title">Kyocera Copier Models</h5>
+                          <p class="card-text">Multifunctional Printers & Digital Copiers</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">M-8124</li>
+                          <li class="list-group-item" style="padding-bottom: 120px;">P-2235</li>
+                        </ul>
+                      </div>
+                </div>
+        </div>
+    </div>
+    </section>
+    <!-- displays end -->
+
+      <!-- projectors -->
+      <section id="projectors">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'img/partners/sharp-logo.png' %}" class="card-img-top" alt="sharp">
+                        <div class="card-body">
+                          <h5 class="card-title">Sharp Copier Models</h5>
+                          <p class="card-text">Multifunctional Printers & Digital Copiers</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <a href="#" class="card-link"><li class="list-group-item">BP-20M-22T/24/28/31</li></a>
+                          <li class="list-group-item">BP-30M-28T/31/35</li>
+                          <li class="list-group-item">BP-20C20ZT/25</li>
+                          <li class="list-group-item">BP-30C25ZT</li>
+                          <li class="list-group-item">BP-50C26/31/36</li>
+                        </ul>
+                        
+                      </div>
+          
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'img/partners/ricoh_logo.png' %}" class="card-img-top" alt="ricoh">
+                        <div class="card-body">
+                          <h5 class="card-title">Ricoh Copier Models</h5>
+                          <p class="card-text">Multifunctional Printers & Digital Copiers</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">PC-311W</li>
+                          <li class="list-group-item" style="padding-bottom: 140px;">M-320F</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="{% static 'img/partners/kyocera-logo.png' %}" class="card-img-top" alt="kyocera">
+                            <div class="card-body">
+                              <h5 class="card-title">Kyocera Copier Models</h5>
+                              <p class="card-text">Multifunctional Printers & Digital Copiers</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">M-8124</li>
+                              <li class="list-group-item" style="padding-bottom: 120px;">P-2235</li>
+                            </ul>
+                          </div>
+                    </div>
+            </div>
+        </div>
+        </section>
+        <!-- projectors end -->
+
+           <!-- others products -->
+      <section id="otherprods">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'img/partners/sharp-logo.png' %}" class="card-img-top" alt="sharp">
+                        <div class="card-body">
+                          <h5 class="card-title">Sharp Copier Models</h5>
+                          <p class="card-text">Multifunctional Printers & Digital Copiers</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <a href="#" class="card-link"><li class="list-group-item">BP-20M-22T/24/28/31</li></a>
+                          <li class="list-group-item">BP-30M-28T/31/35</li>
+                          <li class="list-group-item">BP-20C20ZT/25</li>
+                          <li class="list-group-item">BP-30C25ZT</li>
+                          <li class="list-group-item">BP-50C26/31/36</li>
+                        </ul>
+                        
+                      </div>
+          
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{% static 'img/partners/ricoh_logo.png' %}" class="card-img-top" alt="ricoh">
+                        <div class="card-body">
+                          <h5 class="card-title">Ricoh Copier Models</h5>
+                          <p class="card-text">Multifunctional Printers & Digital Copiers</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">PC-311W</li>
+                          <li class="list-group-item" style="padding-bottom: 140px;">M-320F</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="{% static 'img/partners/kyocera-logo.png' %}" class="card-img-top" alt="kyocera">
+                            <div class="card-body">
+                              <h5 class="card-title">Kyocera Copier Models</h5>
+                              <p class="card-text">Multifunctional Printers & Digital Copiers</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">M-8124</li>
+                              <li class="list-group-item" style="padding-bottom: 120px;">P-2235</li>
+                            </ul>
+                          </div>
+                    </div>
+            </div>
+        </div>
+        </section>
+        <!-- others products end -->
+ 
+    <center>
+        <br><br>
+        <h1><u>Our Products Details</u></h1>
+    <img src="{% static 'img/others/work-prog2.png' %}" alt="work-prg"><br>
     <a href="{% url 'index-view' %}">Go Home</a>
-  </center>
+    </center>
+
+      <!-- Footer -->
+  <footer class="my-footer" style="background-color:#74c4f7;">
+    <div class="sticky-bottom">
+      <hr>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-2 col-sm-2">
+          <div class="quicklinks">
+            <h3>Quick Links</h3>
+            <ul class="links">
+              <a href="#aboutus"><li><h6>About</h6></li></a>
+              <a href="#products"> <li><h6>Products</h6></li></a> 
+              <a href="#services"><li><h6>Services</h6></li></a>
+              <a href="#contacts"><li><h6>Contact</h6></li></a>
+            </ul>
+          </div>
+      </div>
+        <div class="col-lg-4 col-sm-4">
+          <div class="socials">
+            <h4>Follow Us On<img style="height: 50px; padding-left: 10px;" src="{% static 'img/icons/social-media.png' %}" alt=""></h4>
+            <ul class="sociallinks">
+              <a href="https://www.facebook.com/" target="_blank"><li><img src="{% static 'img/icons/facebook.png' %}" alt=""></li></a>
+              <a href="https://www.instagram.com/" target="_blank"><li><img src="{% static 'img/icons/instagram.png' %}" alt=""></li></a>
+              <a href="https://x.com/" target="_blank"><li><img src="{% static 'img/icons/twitter.png' %}" alt=""></li></a>
+              <a href="https://in.linkedin.com/" target="_blank"><li><img src="{% static 'img/icons/linkedin.png' %}" alt=""></li></a>
+            </ul>
+          </div>
+      </div>
+      <div class="col-lg-5 col-sm-10 glocation">
+        <div>
+          <h4>Location</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2311.7635411382857!2d77.50505053459986!3d12.977777467062236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d8c7073aaad%3A0x15f98f8b334ca1c7!2sStar%20Technologies!5e0!3m2!1sen!2sin!4v1726219949813!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+        <p> Copyright &copy; 2024 Designed & Developed by Star Technologies. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!--For scroll animations-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="{% static 'js/script.js' %}"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
