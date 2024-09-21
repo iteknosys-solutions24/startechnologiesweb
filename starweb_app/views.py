@@ -67,10 +67,92 @@ def accept_cookies(request):
     return response
 
 def reject_cookies(request):
-    response = redirect('index-view')  # Redirect to a relevant page
+    response = redirect('cookie-policy')  # Redirect to a relevant page
     response.set_cookie('cookie_consent', 'rejected', max_age=31536000)  # 1 year
     return response
 
 
 def cookie_policy(request):
     return render(request, 'html/cookie_policy.html')
+
+#------------------------Copiers--------------------------------
+def BP_20M_31_28_24_22_pdf_view(request):
+    return render(request, 'html/prod_view.html')
+
+def BP_20C_20_25_10C20_pdf_view(request):
+    return render(request, 'html/prod_view.html')
+
+def BP_30M_35_31_28_pdf_view(request):
+    return render(request, 'html/prod_view.html')
+
+def PC_311W_MC_320F_merged(request):
+    return render(request, 'html/prod_view.html')
+
+def MC_251FW(request):
+    return render(request, 'html/prod_view.html')
+
+def M_2040dn_2540dn_2640idw(request):
+    return render(request, 'html/prod_view.html')
+
+def BP_30C25Z_BP_30C25ZT(request):
+    return render(request, 'html/prod_view.html')
+
+def BP_50C26_50C31_50C36_50C45(request):
+    return render(request, 'html/prod_view.html')
+
+def M_8124cidn(request):
+    return render(request, 'html/prod_view.html')
+
+#-----------------Displays----------------------------
+
+def PN_Q901_801_701_6011(request):
+    return render(request, 'html/prod_view.html')
+
+def PN_HW_751(request):
+    return render(request, 'html/prod_view.html')
+
+def PN_50TC1(request):
+    return render(request, 'html/prod_view.html')
+
+def Display_R65_2024_2(request):
+    return render(request, 'html/prod_view.html')
+
+def R_75_inch(request):
+    return render(request, 'html/prod_view.html')
+
+def display_r_series_86_inch(request):
+    return render(request, 'html/prod_view.html')
+
+#------------------------------------------------------------
+
+
+#-----------------------Projectors-------------------------------------
+
+def viewsonic_all_pdf(request):
+    return render(request, 'html/prod_view.html')
+
+def epson_all_pdf(request):
+    return render(request, 'html/prod_view.html')
+
+def panasonic_all_pdf(request):
+    return render(request, 'html/prod_view.html')
+
+def infocus_all_pdf(request):
+    return render(request, 'html/prod_view.html')
+
+def benq_all_pdf(request):
+    return render(request, 'html/prod_view.html')
+
+def optoma_all_pdf(request):
+    return render(request, 'html/prod_view.html')
+
+#------------------------------------------------------------
+
+#-------------------Other Products---------------------------
+def fujitsu_all_pdf(request):
+    return render(request, 'html/prod_view.html')
+
+def hp_all_pdf(request):
+    return render(request, 'html/prod_view.html')
+
+#------------------------------------------------------------
