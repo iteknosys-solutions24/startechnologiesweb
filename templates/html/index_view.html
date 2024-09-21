@@ -28,6 +28,7 @@
 <body>
  
  <!-- <marquee behavior="" direction="left">Highlights: Sharp's Newly Launched Printer -: Sharp BP-20M22 A3 Multifunctional Printer<img src="{% static 'img/lohith.gif' %}" alt="" width="3%" height="3%"> </marquee> -->
+  
  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-custom py-3 sticky-top">
     <div class="container">
@@ -76,13 +77,12 @@
 
   <!-- About -->
   <section class="row w-100" id="aboutus">
-    <div class="col-lg-7 col-sm-5 col-img"></div>
-    <div class="col-lg-5 col-sm-7">
+    <div class="col-lg-7 col-md-3 col-sm-4  col-img" style="margin-left: 50px;"></div>
+    <div class="col-lg-4 col-md-5 col-sm-6">
       <div class="container">
         <div class="row" data-aos="flip-up">
-          <div class="col-md-10 offset-md-1">
+          <div class=" offset-md-1 ">
             <h1>About Us</h1>
-          <p>Transforming Workspaces with Innovative Office Automation.</p>
           <div>
             <p>Star Technologies started in March 2018 as a proprietor ship company at Bangalore, to cater all office automation and IT Hardware products with a mission. " We manage your office automation needs, so that you can manage your customers efficiently".</p>
             <p>Star Technologies was started with well experienced people from similar industry. Started at Bangalore Sales & Service initially and later expanded to major parts of Karnataka with support of partners.</p>
@@ -414,7 +414,7 @@
     
         <p>Any Queries ? Please leave a Message!</p>
          <!-- Display Bootstrap alerts for messages -->
-      {% if messages %}
+         {% if messages %}
          <div class="alert-container">
              {% for message in messages %}
                  <div class="alert alert-{{ message.tags }}  alert-custom-large alert-dismissible fade show" role="alert">
@@ -424,7 +424,6 @@
              {% endfor %}
          </div>
        {% endif %}
-        
         <form class="row g-3 contactForm mt-4" method="POST">
           {% csrf_token %} 
           <div class="col-md-6">
@@ -508,4 +507,3 @@
   <script>AOS.init();</script>
 </body>
 </html>
-
