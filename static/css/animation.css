@@ -106,3 +106,51 @@
     transform: translateY(5px);
     border-color: black;   
 }
+
+/* ---------------------------Clients & Partners-------------------------------- */
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes right-slide {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.logos-slide img {
+  height: 80px;
+  padding-right: 50px;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 15s slide infinite linear; 
+}
+
+.logo-right-slide {
+  display: inline-block;
+  animation: 15s right-slide infinite linear; 
+}
+
+.logo-right-slide img {
+  height: 80px;
+  padding-left: 50px;
+}
+
+.logos {
+  overflow:hidden;
+  padding: 5px 0;
+  white-space: nowrap;
+}
+
+/* ---------------------------Clients & Partners End-------------------------------- */
