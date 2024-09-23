@@ -381,4 +381,11 @@ section{
     border-style: solid;
     border-color: transparent transparent black transparent;
   }
-  
+
+  /* ------------------Products Page Css----------------------------- */
+
+  .card{
+    width: 25rem;
+  }
+
+ 
