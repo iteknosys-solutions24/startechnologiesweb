@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Star Technologies</title> 
-  <link rel="icon" href="{% static 'img/main/logo-title2.png' %}" type="image/x-icon" />
+  <link rel="icon" href="{% static 'img/main/logo-title.png' %}" type="image/x-icon" />
 <!--   fontawesome icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
   <!-- Bootstrap CSS & Icons --> 
@@ -64,12 +64,12 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> 
   <!-- Main End -->
 
   <!-- About -->
   <section class="row w-100" id="aboutus">
-    <div class="col-lg-7 col-md-3 col-sm-4  col-img" style="margin-left: 50px;"></div>
+    <div class="col-lg-7 col-md-3 col-sm-4  col-img" style="margin-left: 50px;  border-radius: 10px;"></div>
     <div class="col-lg-4 col-md-5 col-sm-6">
       <div class="container">
         <div class="row" data-aos="flip-up">
@@ -88,15 +88,35 @@
    <!-- About End -->
 
    <!-- Our Mission & why you choose us -->
-   <div class="containar px-5">
-    <div class="row">
-      <div class="col">
-        <h3>Our Mission</h3>
+   <div class="our-contianer">
+      <div class="our-block">
+        <div class="our-image">
+          <img src="{% static 'img/main/mission.png' %}" alt="mission">
+        </div>
+        <div class="our-content">
+          <h5>Our Mission</h5>
+          <p>
+            Is to provide state of the art technology with exceptional service, quality equipments and supplies, product training and assistance that help the customers for better workflow and communication. We strive to give the best products and wide range solutions backed up by our strong service support.
+          </p>
+        </div>
       </div>
-      <div class="col">
-        <h3>Why Choose Us ?</h3>
+      <div class="our-block">
+        <div class="our-image">
+          <img src="{% static 'img/main/why.jpg' %}" alt="why">
+        </div>
+        <div class="our-content">
+          <h5>Why Choose Us ?</h5>
+          <p>With best of our processes, support and SLA's, we guarantee you a high availabilty of your business equipments, that help you maximize the benefits.</p>
+          <ul class="ul-class">
+            <li><i class="fa-solid fa-check"></i> Highly Professional Staff.</li>
+            <li><i class="fa-solid fa-check"></i> On Time and on Budget.</li>
+            <li><i class="fa-solid fa-check"></i> Vision for the Business</li>
+            <li><i class="fa-solid fa-check"></i> Real Value for the Product.</li>
+            <li><i class="fa-solid fa-check"></i> Keeping you out of Trouble.</li>
+            <li><i class="fa-solid fa-check"></i> With you for the Long Haul.</li>
+          </ul>
+        </div>
       </div>
-    </div>
    </div>
    <!-- Our Mission & why you choose us end -->
 
@@ -281,6 +301,7 @@
           <img src="{% static 'img/partners/kyocera-logo.png' %}" alt="Partner 6">
           <img src="{% static 'img/partners/lg-Logo.png' %}" alt="Partner 7">
           <img src="{% static 'img/partners/philips-smart-logo.jpg' %}" alt="Partner 8">
+          <img src="{% static 'img/partners/ricoh_logo.png' %}" alt="Partner 9">
         </div>
         <div class="logos-slide">
           <img src="{% static 'img/partners/sharp-logo.png' %}" alt="Partner 1">
@@ -291,6 +312,7 @@
           <img src="{% static 'img/partners/kyocera-logo.png' %}" alt="Partner 6">
           <img src="{% static 'img/partners/lg-Logo.png' %}" alt="Partner 7">
           <img src="{% static 'img/partners/philips-smart-logo.jpg' %}" alt="Partner 8">
+          <img src="{% static 'img/partners/ricoh_logo.png' %}" alt="Partner 9">
         </div>
         <div class="logos-slide">
           <img src="{% static 'img/partners/sharp-logo.png' %}" alt="Partner 1">
@@ -301,6 +323,7 @@
           <img src="{% static 'img/partners/kyocera-logo.png' %}" alt="Partner 6">
           <img src="{% static 'img/partners/lg-Logo.png' %}" alt="Partner 7">
           <img src="{% static 'img/partners/philips-smart-logo.jpg' %}" alt="Partner 8">
+          <img src="{% static 'img/partners/ricoh_logo.png' %}" alt="Partner 9">
         </div>
       </div>
     </section>
@@ -323,6 +346,7 @@
           <img src="{% static 'img/clients/iisc.png' %}" alt="client 7">
           <img src="{% static 'img/clients/jain-logo2.png' %}" alt="client 8">
           <img src="{% static 'img/clients/kaynes-logo2.png' %}" alt="clients 9">
+          <img src="{% static 'img/clients/survey_set_logo.png' %}" alt="clients 10">
         </div>
       <div class="logo-right-slide">
         <img src="{% static 'img/clients/abb-logo.png' %}" alt="client 1">
@@ -334,6 +358,7 @@
         <img src="{% static 'img/clients/iisc.png' %}" alt="client 7">
         <img src="{% static 'img/clients/jain-logo2.png' %}" alt="client 8">
         <img src="{% static 'img/clients/kaynes-logo2.png' %}" alt="clients 9">
+        <img src="{% static 'img/clients/survey_set_logo.png' %}" alt="clients 10">
       </div>
       <div class="logo-right-slide">
         <img src="{% static 'img/clients/abb-logo.png' %}" alt="client 1">
@@ -345,6 +370,7 @@
         <img src="{% static 'img/clients/iisc.png' %}" alt="client 7">
         <img src="{% static 'img/clients/jain-logo2.png' %}" alt="client 8">
         <img src="{% static 'img/clients/kaynes-logo2.png' %}" alt="clients 9">
+        <img src="{% static 'img/clients/survey_set_logo.png' %}" alt="clients 10">
         </div>
       </div>
 </section>
@@ -448,6 +474,7 @@
               <a href="https://in.linkedin.com/" target="_blank"><li><img src="{% static 'img/icons/linkedin.png' %}" alt=""></li></a>
             </ul>
           </div>
+          <p>**Our site best viewed on Internet explorer 9+, Mozilla 50+ and Chrome 52+</p>
       </div>
       <div class="col-lg-5 col-sm-10 glocation">
         <div>
@@ -460,14 +487,23 @@
   </footer>
   <!-- Footer End -->
 
-    <!-- Your body content here -->
-    {% include 'html/cookie_consent.html' %}
+
+  <div id="cookie-banner" class="cookie-banner">
+    <p>
+      We use cookies to ensure you get the best experience on our website.
+      <a href="#">Learn more</a>
+    </p>
+    <button id="accept-cookies">Accept all</button>
+    <button id="decline-cookies">Decline</button>
+    </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <!--For scroll animations-->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
   <script src="{% static 'js/script.js' %}"></script>
+  
   <script>AOS.init();</script>
   
 </body>
