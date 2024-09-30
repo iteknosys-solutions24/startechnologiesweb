@@ -61,6 +61,12 @@ def products_view(request):
     return render(request, 'html/prod_view.html')
 
 
+def cookies_policy_view(request):
+    return render(request, 'html/cookies_policy.html')
+
+
+
+
 
 #------------------------Copiers--------------------------------
 def BP_20M_31_28_24_22_pdf_view(request):
