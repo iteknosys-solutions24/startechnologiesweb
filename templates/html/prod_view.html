@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Products</title>
-    <link rel="icon" href="{% static 'img/main/logo-title2.png' %}" type="image/x-icon" />
+    <link rel="icon" href="{% static 'img/main/logo-title.png' %}" type="image/x-icon" />
     <!--   fontawesome icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
   <!-- Bootstrap CSS & Icons --> 
@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="{% static 'css/animation.css' %}">
 </head>
 <body>
-
     <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-custom py-3 sticky-top">
     <div class="container">
@@ -53,7 +52,6 @@
     </div>
   </nav>
    <!-- Navbar End -->
-
    <!-- copiers -->
    <section id="copiers">
     <div class="container" data-aos="fade-up">
@@ -90,7 +88,7 @@
                 <div class="card-outline col-lg-3">
                     <div class="card">
                         <img src="{% static 'img/partners/kyocera-logo.png' %}" class="card-img-top" alt="kyocera">
-                        <div class="card-body" style="padding-top: 10px;">
+                        <div class="card-body" style="padding-top: 60px;">
                           <h5 class="card-title">Kyocera Copier Models</h5>
                         </div>
                         <ul class="list-group list-group-flush" style="padding-bottom: 140px;">
@@ -103,7 +101,6 @@
     </div>
   </section>
     <!-- copiers end -->
-
        <!-- displays -->
   <section id="displays">
         <div class="container" data-aos="flip-up">
@@ -138,7 +135,6 @@
         </div>
   </section>
     <!-- displays end -->
-
       <!-- projectors -->
   <section id="projectors">
         <div class="container" data-aos="fade-up">
@@ -216,8 +212,7 @@
         </div>
   </section>
     <!-- projectors end -->
-
- <!-- others products -->
+    <!-- others products -->
   <section id="otherprods">
     <div class="container" data-aos="fade-up">
       <div class="row">
@@ -229,7 +224,7 @@
                  <strong>Scanners</strong> deliver high-speed, reliable document capture with exceptional image quality, making them ideal for business and archival needs, and feature intuitive software for streamlined workflows.</p>
               </div>
               <div class="card-body">
-                <a href="{% static 'docs/fujitsu-all.pdf' %}" class="card-link" target="_blank" onclick="window.open(this.href); return  false;">View Brochure</a>
+                <a href="{% static 'docs/fujitsu-all.pdf' %}" class="card-link nav-link" target="_blank" onclick="window.open(this.href); return  false;">View Brochure <i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -240,7 +235,7 @@
                 <p class="card-text" style="text-align: justify; padding-bottom: 10px;"><strong>Scanners</strong> offer fast and efficient document scanning with high-resolution image quality, designed for both home and office use, featuring user-friendly interfaces and robust connectivity options.</p>
               </div>
               <div class="card-body">
-                <a href="{% static 'docs/hp-all.pdf' %}" class="card-link" target="_blank" onclick="window.open(this.href); return  false;">View Brochure</a>
+                <a href="{% static 'docs/hp-all.pdf' %}" class="card-link nav-link" target="_blank" onclick="window.open(this.href); return  false;">View Brochure <i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
               </div>
@@ -248,7 +243,6 @@
   </div>
 </section>
    <!-- others products end -->
-
       <!-- Footer -->
   <footer class="my-footer" style="background-color:#74c4f7;">
     <div class="sticky-bottom">
@@ -286,12 +280,10 @@
     </div>
   </footer>
   <!-- Footer End -->
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <!--For scroll animations-->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="{% static 'js/script.js' %}"></script>
   <script>AOS.init();</script>
-  
 </body>
 </html>
