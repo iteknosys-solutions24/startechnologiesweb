@@ -1,11 +1,12 @@
 from django.urls import path
-from .views import index_view,products_view,BP_20M_31_28_24_22_pdf_view,BP_20C_20_25_10C20_pdf_view,BP_30M_35_31_28_pdf_view,PC_311W_MC_320F_merged,MC_251FW,BP_30C25Z_BP_30C25ZT,BP_50C26_50C31_50C36_50C45,M_8124cidn,PN_Q901_801_701_6011,PN_HW_751,PN_50TC1,Display_R65_2024_2,R_75_inch,display_r_series_86_inch,viewsonic_all_pdf,epson_all_pdf,panasonic_all_pdf,infocus_all_pdf,benq_all_pdf,optoma_all_pdf,fujitsu_all_pdf,hp_all_pdf,cookies_policy_view
+from .views import index_view,products_view,BP_20M_31_28_24_22_pdf_view,BP_20C_20_25_10C20_pdf_view,BP_30M_35_31_28_pdf_view,PC_311W_MC_320F_merged,MC_251FW,BP_30C25Z_BP_30C25ZT,BP_50C26_50C31_50C36_50C45,M_8124cidn,PN_Q901_801_701_6011,PN_HW_751,PN_50TC1,Display_R65_2024_2,R_75_inch,display_r_series_86_inch,viewsonic_all_pdf,epson_all_pdf,panasonic_all_pdf,infocus_all_pdf,benq_all_pdf,optoma_all_pdf,fujitsu_all_pdf,hp_all_pdf,cookies_policy_view,our_gallery
 
 
 urlpatterns = [
     path('',index_view,name='index-view'),
     path('products/', products_view, name='products-view'),
     path('cookies-policy/', cookies_policy_view, name='cookies-policy'),
+    path('our-gallery/',our_gallery,name='our-gallery'),
  
     
     #Products
