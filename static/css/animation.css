@@ -1,7 +1,5 @@
 /*-----------------------Animation keyframes----------------------*/
-
 /*Fade in down animation for logo */
-
 @keyframes fade-in-down {
     0% {
       opacity: 0;
@@ -12,9 +10,7 @@
       transform: translateY(0px);
     }
 }
-
 /* Bounce in from right animation */ 
-
 @keyframes bounce-in-right {
     0% {
       opacity: 0;
@@ -31,9 +27,7 @@
       transform: translateX(0);
     }
 }
-
 /* fade in upwards direction */ 
-
 @keyframes fade-in-upwards {
     0% {
       opacity: 0;
@@ -44,9 +38,7 @@
       transform: translateY(0px);
     }
 }
-
 /* fade in animation */ 
-
 @keyframes fade-in {
     from {
       opacity: 0;
@@ -55,42 +47,29 @@
       opacity: 1;
     }
 }
-
-
-
 /*----------------------------Animation keyframes end -------------------------*/
-
 /*------------------------------------Classes for Animations-----------------------------------------*/
-
 /* fade in down (drop down) animation */
-
 .fadeindown {
     animation: fade-in-down 2s ease;
 }
-
 /* bounce in right*/
-
 .bounce-in-right {
     animation: bounce-in-right 2s ease;
 }
-
 /* fade in up (drop up) animation */
 .fadeinup {
     animation: fade-in-upwards 2s ease;
 }
-
 /* fade in animation */
-
 .fade-in {
     animation: fade-in 2s linear;
 }
-
 .nav-link:hover{
     transform: translateY(2px);
     color: maroon;
     transition: ease-out 0.3s;
 }
-
 .btn{
     box-shadow: inset 0 0 0 0 #c1e2f7;
     transition: ease-out 0.3s;
@@ -98,7 +77,6 @@
     border-color: #c1e2f7;
     color: black;
 }
-
 .btn:hover {
     box-shadow: inset 200px 0 0 0 black;
     cursor: pointer;
@@ -106,9 +84,7 @@
     transform: translateY(5px);
     border-color: black;   
 }
-
 /* ---------------------------Clients & Partners-------------------------------- */
-
 @keyframes slide {
   from {
     transform: translateX(0);
@@ -117,7 +93,6 @@
     transform: translateX(-100%);
   }
 }
-
 @keyframes right-slide {
   from {
     transform: translateX(-100%);
@@ -126,31 +101,25 @@
     transform: translateX(0);
   }
 }
-
 .logos-slide img {
   height: 80px;
   padding-right: 50px;
 }
-
 .logos-slide {
   display: inline-block;
   animation: 15s slide infinite linear; 
 }
-
 .logo-right-slide {
   display: inline-block;
   animation: 15s right-slide infinite linear; 
 }
-
 .logo-right-slide img {
   height: 80px;
   padding-left: 50px;
 }
-
 .logos {
   overflow:hidden;
   padding: 5px 0;
   white-space: nowrap;
 }
-
 /* ---------------------------Clients & Partners End-------------------------------- */
