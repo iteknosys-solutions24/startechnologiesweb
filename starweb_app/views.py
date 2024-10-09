@@ -64,6 +64,9 @@ def products_view(request):
 def cookies_policy_view(request):
     return render(request, 'html/cookies_policy.html')
 
+def our_gallery(request):
+    return render(request, 'html/our_gallery.html')
+
 
 
 
